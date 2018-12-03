@@ -41,7 +41,8 @@
     "plug-reg": "./scripts/plug_versions",
     "serve": "http-server build/",
     "lint": "eslint src",
-    "fmt": "prettier --write configure *.js src/**/*.jsx src/**/*.js src/**/*.scss tasks/**/*.js"
+    "fmt": "prettier --write configure *.js src/**/*.jsx src/**/*.js src/**/*.scss tasks/**/*.js",
+    "postinstall": "opencollective-postinstall"
   },
   "author": "Kaspar Emanuel",
   "license": "CPAL-1.0",
@@ -56,6 +57,7 @@
     "js-yaml": "^3.3.1",
     "lodash.camelcase": "^4.3.0",
     "lodash.throttle": "^4.1.1",
+    "opencollective-postinstall": "^2.0.1",
     "pcb-stackup": "^4.0.0-next.13",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
@@ -72,7 +74,12 @@
     "semantic-ui-react": "^0.67.1",
     "superagent": "^3.3.1",
     "whats-that-gerber": "^4.0.0-next.13",
-    "xml-element-string": "^1.0.0"
+    "xml-element-string": "^1.0.0",
+    "opencollective": "^1.0.3"
   },
-  "sasslintConfig": "./src/.sass-lint.yml"
+  "sasslintConfig": "./src/.sass-lint.yml",
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/kitspace"
+  }
 }
