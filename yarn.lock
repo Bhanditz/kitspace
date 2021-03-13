@@ -8,9 +8,19 @@
   dependencies:
     xlsx "^0.12.6"
 
+"@tracespace/xml-id@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@tracespace/xml-id/-/xml-id-4.0.0.tgz#07aeea58b8b412f670f90cf85b9394d842ab2bcc"
+  integrity sha512-bEAqLh8sxNHHVOErgQrF4cj/PlmaayrTTIWT3uKQKnFk8KlubUQeW+Ip6W9sa+J/bUii927qD0HE5sFxsPo/IQ==
+
 "@tracespace/xml-id@^4.0.0-next.13":
   version "4.0.0-next.13"
   resolved "https://registry.yarnpkg.com/@tracespace/xml-id/-/xml-id-4.0.0-next.13.tgz#7ee9b229572400303e19f43841e7507a0d329320"
+
+"@types/node@^13.1.6":
+  version "13.13.46"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.13.46.tgz#5471e176f3fa15e018dea7992072bf8ca208a3a6"
+  integrity sha512-dqpbzK/KDsOlEt+oyB3rv+u1IxlLFziZu/Z0adfRKoelkr+sTd6QcgiQC+HWq/vkYkHwG5ot2LxgV05aAjnhcg==
 
 JSONStream@^1.0.3:
   version "1.2.1"
@@ -1148,9 +1158,10 @@ color-name@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.1.tgz#4b1415304cf50028ea81643643bd82ea05803689"
 
-color-string@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.4.0.tgz#2b47f8565fb0eb52f9f77c801992b8ca55d6e898"
+color-string@^1.5.3:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.5.tgz#65474a8f0e7439625f3d27a6a19d89fc45223014"
+  integrity sha512-jgIoum0OfQfq9Whcfc2z/VhCNcmQjWbey6qBX0vqt7YICflUmBCh9E9CiQD5GSJ+Uehixm3NUwHVhqUAWRivZg==
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
@@ -2112,6 +2123,18 @@ gerber-parser@^4.0.0-next.9:
     lodash.padright "^3.1.3"
     readable-stream "^2.1.2"
 
+gerber-parser@^4.2.4:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/gerber-parser/-/gerber-parser-4.2.4.tgz#9c6a8dd8e5987b44d49334b96d728a85f39262bd"
+  integrity sha512-Dn+nM+URswnKc1uOihOnmkbLqjiftPO3rYbBCFSz2WFFVOxDt7/nNNzX7U3OPoAoCYGrHbKsgLERj3YERaDLtA==
+  dependencies:
+    "@types/node" "^13.1.6"
+    inherits "^2.0.4"
+    lodash.isfinite "^3.3.2"
+    lodash.padend "^4.6.1"
+    lodash.padstart "^4.6.1"
+    readable-stream "^3.4.0"
+
 gerber-plotter@^4.0.0-next.13:
   version "4.0.0-next.13"
   resolved "https://registry.yarnpkg.com/gerber-plotter/-/gerber-plotter-4.0.0-next.13.tgz#e3167a7cb60650607687ce127fb15ac144adef75"
@@ -2121,6 +2144,18 @@ gerber-plotter@^4.0.0-next.13:
     lodash.isfinite "^3.3.2"
     lodash.isfunction "^3.0.9"
     readable-stream "^2.3.6"
+
+gerber-plotter@^4.2.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/gerber-plotter/-/gerber-plotter-4.2.5.tgz#27fca1d6382f8e87b935165b1502e8bb72952ea7"
+  integrity sha512-8zU9sambodzYTzCC3p3hlar3QdGC9uwC+rDCkxKhVf7rlL2lo6S7c46Q2hyNI2SpuY3WAE8EGCXHMP+MMo+2Ew==
+  dependencies:
+    "@types/node" "^13.1.6"
+    inherits "^2.0.4"
+    lodash.fill "^3.4.0"
+    lodash.isfinite "^3.3.2"
+    lodash.isfunction "^3.0.9"
+    readable-stream "^3.4.0"
 
 gerber-to-svg@^4.0.0-next.13:
   version "4.0.0-next.13"
@@ -2134,6 +2169,21 @@ gerber-to-svg@^4.0.0-next.13:
     lodash.isfinite "^3.2.0"
     lodash.isstring "^4.0.1"
     readable-stream "^2.1.2"
+    xml-element-string "^1.0.0"
+
+gerber-to-svg@^4.2.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/gerber-to-svg/-/gerber-to-svg-4.2.5.tgz#07808df0f46a4f4a016d5ef9d95f07ea0b5b2d4e"
+  integrity sha512-1yR/j3bVZ/j0SKjvc+xYFrnYfccmH1jAh1oe4dw31eCOsNLYG43Sun6mOOYz5ylN95pStRRo7yU0T76wtgY74A==
+  dependencies:
+    "@tracespace/xml-id" "^4.0.0"
+    "@types/node" "^13.1.6"
+    escape-html "^1.0.3"
+    gerber-parser "^4.2.4"
+    gerber-plotter "^4.2.5"
+    inherits "^2.0.4"
+    lodash.isfinite "^3.3.2"
+    readable-stream "^3.4.0"
     xml-element-string "^1.0.0"
 
 get-caller-file@^1.0.1:
@@ -2494,6 +2544,11 @@ inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.0, inherits@~2.0.1, 
 inherits@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
+
+inherits@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
 ini@~1.3.0:
   version "1.3.4"
@@ -3095,6 +3150,11 @@ lodash.mergewith@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55"
 
+lodash.padend@^4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.padend/-/lodash.padend-4.6.1.tgz#53ccba047d06e158d311f45da625f4e49e6f166e"
+  integrity sha1-U8y6BH0G4VjTEfRdpiX05J5vFm4=
+
 lodash.padleft@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/lodash.padleft/-/lodash.padleft-3.1.3.tgz#9d368e2c16e7e4f0f8ef08bc782c538c97b4bbd9"
@@ -3108,6 +3168,11 @@ lodash.padright@^3.1.3:
   dependencies:
     lodash._basetostring "^3.0.0"
     lodash._createpadding "^3.0.0"
+
+lodash.padstart@^4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.padstart/-/lodash.padstart-4.6.1.tgz#d2e3eebff0d9d39ad50f5cbd1b52a7bce6bb611b"
+  integrity sha1-0uPuv/DZ05rVD1y9G1KnvOa7YRs=
 
 lodash.pickby@^4.2.1:
   version "4.6.0"
@@ -3706,25 +3771,33 @@ pbkdf2@^3.0.3:
   dependencies:
     create-hmac "^1.1.2"
 
-pcb-stackup-core@^4.0.0-next.13:
-  version "4.0.0-next.13"
-  resolved "https://registry.yarnpkg.com/pcb-stackup-core/-/pcb-stackup-core-4.0.0-next.13.tgz#2f001ee05254c6ae9d171c5ae34e23d5eb7cd25c"
+pcb-stackup-core@^4.2.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/pcb-stackup-core/-/pcb-stackup-core-4.2.5.tgz#0a9df166ce1338461d4ad86d23ec24f2c6261e56"
+  integrity sha512-iXx3khjlgh+mE7ucW8EFKFHLZmAsGViOdcYW0J6nV25Xxsyp/NMMiGuEbIpCt6nRmkScM5WZ0ROdGTnTrmAtKA==
   dependencies:
-    "@tracespace/xml-id" "^4.0.0-next.13"
-    color-string "^1.4.0"
-    lodash.isstring "^4.0.1"
+    "@tracespace/xml-id" "^4.0.0"
+    "@types/node" "^13.1.6"
+    color-string "^1.5.3"
+    gerber-to-svg "^4.2.5"
     viewbox "^1.0.0"
+    whats-that-gerber "^4.2.2"
     xml-element-string "^1.0.0"
+    xtend "^4.0.2"
 
-pcb-stackup@^4.0.0-next.13:
-  version "4.0.0-next.13"
-  resolved "https://registry.yarnpkg.com/pcb-stackup/-/pcb-stackup-4.0.0-next.13.tgz#3adffb6d0ff81d15f1dec66f51b9c923f17cb5bf"
+pcb-stackup@^4.0.0:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/pcb-stackup/-/pcb-stackup-4.2.5.tgz#148c1c76bf9a024b3d5e2cef71d28bcc6a49da08"
+  integrity sha512-js/8fAjinLgyK9znctFKwidbDohMCJlhzLID44PU3WSkd2e9zC62YIomNF0/MJXwoE5VtEymAnTXZzzIwT39OA==
   dependencies:
-    "@tracespace/xml-id" "^4.0.0-next.13"
-    gerber-to-svg "^4.0.0-next.13"
-    pcb-stackup-core "^4.0.0-next.13"
-    whats-that-gerber "^4.0.0-next.13"
-    xtend "^4.0.1"
+    "@tracespace/xml-id" "^4.0.0"
+    "@types/node" "^13.1.6"
+    gerber-to-svg "^4.2.5"
+    pcb-stackup-core "^4.2.5"
+    run-parallel "^1.1.9"
+    run-waterfall "^1.1.6"
+    whats-that-gerber "^4.2.2"
+    xtend "^4.0.2"
 
 pify@^2.0.0:
   version "2.3.0"
@@ -3896,6 +3969,11 @@ querystring-es3@~0.2.0:
 querystring@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
+
+queue-microtask@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.2.tgz#abf64491e6ecf0f38a6502403d4cda04f372dfd3"
+  integrity sha512-dB15eXv3p2jDlbOiNLyMabYg1/sXvppd8DP2J3EOCQ0AkuSXCW2tP7mnVouVLJKgUMY6yP0kcQDVpLCN13h4Xg==
 
 ramda@^0.22.0:
   version "0.22.1"
@@ -4077,6 +4155,15 @@ readable-stream@^2.3.6:
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
+
+readable-stream@^3.4.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
+  integrity sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
+  dependencies:
+    inherits "^2.0.3"
+    string_decoder "^1.1.1"
+    util-deprecate "^1.0.1"
 
 readable-stream@~2.0.0, readable-stream@~2.0.6:
   version "2.0.6"
@@ -4301,6 +4388,18 @@ run-async@^0.1.0:
   dependencies:
     once "^1.3.0"
 
+run-parallel@^1.1.9:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/run-parallel/-/run-parallel-1.2.0.tgz#66d1368da7bdf921eb9d95bd1a9229e7f21a43ee"
+  integrity sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
+  dependencies:
+    queue-microtask "^1.2.2"
+
+run-waterfall@^1.1.6:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/run-waterfall/-/run-waterfall-1.1.7.tgz#ae368b549b2f5171f86c2924492cab3352a6e9c5"
+  integrity sha512-iFPgh7SatHXOG1ClcpdwHI63geV3Hc/iL6crGSyBlH2PY7Rm/za+zoKz6FfY/Qlw5K7JwSol8pseO8fN6CMhhQ==
+
 rx-lite@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-3.1.2.tgz#19ce502ca572665f3b647b10939f97fd1615f102"
@@ -4308,6 +4407,11 @@ rx-lite@^3.1.2:
 safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
+
+safe-buffer@~5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+  integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
 sanitize-html@^1.6.1:
   version "1.13.0"
@@ -4558,6 +4662,13 @@ string-width@^2.0.0:
 string.prototype.repeat@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/string.prototype.repeat/-/string.prototype.repeat-0.2.0.tgz#aba36de08dcee6a5a337d49b2ea1da1b28fc0ecf"
+
+string_decoder@^1.1.1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.3.0.tgz#42f114594a46cf1a8e30b0a84f56c78c3edac21e"
+  integrity sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
+  dependencies:
+    safe-buffer "~5.2.0"
 
 string_decoder@~0.10.0, string_decoder@~0.10.x:
   version "0.10.31"
@@ -4847,7 +4958,7 @@ user-home@^2.0.0:
   dependencies:
     os-homedir "^1.0.0"
 
-util-deprecate@~1.0.1:
+util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
@@ -4901,6 +5012,13 @@ webidl-conversions@^3.0.0, webidl-conversions@^3.0.1:
 whats-that-gerber@^4.0.0-next.13:
   version "4.0.0-next.13"
   resolved "https://registry.yarnpkg.com/whats-that-gerber/-/whats-that-gerber-4.0.0-next.13.tgz#1bd76056b2450d13c2000de94950c300b2b3e4eb"
+
+whats-that-gerber@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/whats-that-gerber/-/whats-that-gerber-4.2.2.tgz#7b039664887a6d971852095682d1ed1d28825a41"
+  integrity sha512-2agpMEj0a0SYYdvxlRJHMEiTbu25qgri5Le6Q1acKjU1s567J6hK6henR0a7I1XWNFxsALk5hl45xR1ZJFukFQ==
+  dependencies:
+    xtend "^4.0.2"
 
 whatwg-encoding@^1.0.1:
   version "1.0.1"
@@ -5016,9 +5134,14 @@ xss-filters@^1.2.6:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/xss-filters/-/xss-filters-1.2.7.tgz#59fa1de201f36f2f3470dcac5f58ccc2830b0a9a"
 
-xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
+xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
+
+xtend@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
+  integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^3.2.1:
   version "3.2.1"
