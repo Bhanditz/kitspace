@@ -56,7 +56,7 @@
     "js-yaml": "^3.3.1",
     "lodash.camelcase": "^4.3.0",
     "lodash.throttle": "^4.1.1",
-    "pcb-stackup": "^4.0.0-next.13",
+    "pcb-stackup": "^4.0.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-double-scrollbar": "^0.0.15",
