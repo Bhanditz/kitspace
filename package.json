@@ -53,7 +53,7 @@
     "github-url-to-object": "^2.2.6",
     "html-to-react": "^1.2.2",
     "immutable": "^3.8.1",
-    "js-yaml": "^3.3.1",
+    "js-yaml": "^3.14.2",
     "lodash.camelcase": "^4.3.0",
     "lodash.throttle": "^4.1.1",
     "pcb-stackup": "^4.0.0-next.13",
